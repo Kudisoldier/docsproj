@@ -7,3 +7,7 @@
 - активировал окружение командой uv init
 - установил mkdocs командой uv add --dev mkdocs
 - создал проект mkdocs командой uv run mkdocs new mydocsproj
+- далее в созданном проекте добавил свои файлы с документацией
+- и настроил тему mkdocs на material, установив зависимость командой uv add --dev mkdocs-material
+- 
+

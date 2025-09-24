@@ -1,1 +1,29 @@
-site_name: My Docs
+site_name: My python docs
+nav:
+  - Home: index.md
+  - uv: uv.md
+  - MkDocs: mkdocs.md
+theme:
+  name: material
+  palette:
+    # Default: Dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+    # Optional: Light mode toggle
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - pymdownx.highlight
+  - pymdownx.superfences

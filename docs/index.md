@@ -1,17 +1,21 @@
-# Welcome to MkDocs
+# Welcome to My Python Tools Documentation
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+This site provides a quick reference for modern tools in the Python ecosystem.  
 
-## Commands
+## Contents
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+- [uv](uv.md) — A fast, all-in-one Python package and project manager.  
+- [MkDocs](mkdocs.md) — A static site generator for project documentation.  
 
-## Project layout
+## Getting Started
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+1. Browse the sections above to learn about each tool.  
+2. Use the navigation menu (on the left) to move between pages.  
+3. Check the official documentation for deeper dives:  
+   - [uv docs](https://docs.astral.sh/uv/)  
+   - [MkDocs docs](https://www.mkdocs.org/)  
+
+---
+
+Happy coding and documenting 🚀
+
