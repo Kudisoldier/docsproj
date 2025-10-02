@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">  <!-- Язык можно изменить по необходимости -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Метаданные сайта -->
+    <title>uv - My python docs</title>
+    <meta name="description" content="Пример кастомной темы для MkDocs">
+    <meta name="author" content="Efim">
+    <link href="../css/style.css" rel="stylesheet">
+  </head>
+  <body class="">  <!-- Класс для стилизации главной страницы -->
+
+    <!-- Кастомный header -->
+    <header>
+      <h1>Кастомный Header: Добро пожаловать на My python docs</h1>
+    </header>
+
+    <!-- Основной контент страницы -->
+    <main>
+      <h1 id="uv-modern-python-package-project-manager">uv — Modern Python Package &amp; Project Manager</h1>
+<p><code>uv</code> is a high-performance, “all-in-one” tool for managing Python projects. It aims to replace or consolidate many of the tools in the typical Python ecosystem (like pip, virtualenv, pipx, poetry, pyenv, etc.) while being much faster and giving a smooth developer experience. :contentReference[oaicite:0]{index=0}</p>
+<hr />
+<h2 id="key-features">Key Features</h2>
+<ul>
+<li><strong>Dependency and environment management</strong><br />
+  Handles installing, upgrading, removing dependencies; locks and syncs environments. Automatically manages virtual environments for your projects. :contentReference[oaicite:1]{index=1}  </li>
+<li><strong>Tool execution &amp; “ephemeral” tools</strong><br />
+  You can run CLI tools without permanently installing them, using commands like <code>uvx</code> (alias for <code>uv tool run</code>). Useful for linting, formatting, etc. :contentReference[oaicite:2]{index=2}  </li>
+<li><strong>Python version management</strong><br />
+  Provides commands to install and pin specific Python versions. :contentReference[oaicite:3]{index=3}  </li>
+<li><strong>Project initialization, building &amp; publishing</strong><br />
+  Scaffold Python projects, build distributions, publish to package indexes. :contentReference[oaicite:4]{index=4}  </li>
+<li><strong>Pip interface compatibility</strong><br />
+  Supports many existing workflows: <code>uv pip install …</code>, dealing with <code>requirements.txt</code>, etc. So migration is often smooth. :contentReference[oaicite:5]{index=5}</li>
+</ul>
+<hr />
+<h2 id="why-use-uv">Why Use uv</h2>
+<table>
+<thead>
+<tr>
+<th>Benefit</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Speed</strong></td>
+<td>Much faster dependency resolution, installations, environment setup compared to pip, virtualenv, pip-tools. :contentReference[oaicite:6]{index=6}</td>
+</tr>
+<tr>
+<td><strong>Reduced tool-sprawl</strong></td>
+<td>One tool instead of juggling many (pip, pipx, poetry, virtualenv, pyenv, etc.). Fewer contexts to switch. :contentReference[oaicite:7]{index=7}</td>
+</tr>
+<tr>
+<td><strong>Better reproducibility</strong></td>
+<td>Lock files, isolated tool / project environments, version pinning. :contentReference[oaicite:8]{index=8}</td>
+</tr>
+<tr>
+<td><strong>Modern UX</strong></td>
+<td>Clean commands, alias like <code>uvx</code>, good docs, nicer developer experience. :contentReference[oaicite:9]{index=9}</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="basic-usage">Basic Usage</h2>
+<p>Here are some common commands you’ll use with <code>uv</code>:  </p>
+<pre><code class="language-bash"># Install uv (one of the ways)
+curl -LsSf https://astral.sh/uv/install.sh | sh  
+# or via pip: pip install uv :contentReference[oaicite:10]{index=10}
+
+# Add dependencies in a project
+uv add requests flask
+
+# Lock dependencies, sync them
+uv lock
+uv sync
+
+# Run a tool once without installing it permanently
+uvx ruff check src/
+
+# Permanently install a tool
+uv tool install ruff
+
+# Manage Python versions
+uv python install 3.12
+uv python pin 3.12
+
+# Build and publish
+uv build
+uv publish
+</code></pre>
+    </main>
+
+    <!-- Кастомный footer -->
+    <footer>
+      <p>Кастомный Footer: © 2025 Efim. Все права защищены.</p>
+    </footer>
+
+  </body>
+</html>
