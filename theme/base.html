@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">  <!-- Язык можно изменить по необходимости -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Метаданные сайта -->
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+    <meta name="description" content="{{ config.site_description }}">
+    <meta name="author" content="{{ config.site_author }}">
+    <link href="{{ 'css/style.css'|url }}" rel="stylesheet">
+  </head>
+  <body class="{% if page.is_homepage %}homepage{% endif %}">  <!-- Класс для стилизации главной страницы -->
+
+    <!-- Кастомный header -->
+    <header>
+      <h1>Кастомный Header: Добро пожаловать на {{ config.site_name }}</h1>
+    </header>
+
+    <!-- Основной контент страницы -->
+    <main>
+      {{ page.content }}
+    </main>
+
+    <!-- Кастомный footer -->
+    <footer>
+      <p>Кастомный Footer: © 2025 {{ config.site_author }}. Все права защищены.</p>
+    </footer>
+
+  </body>
+</html>
